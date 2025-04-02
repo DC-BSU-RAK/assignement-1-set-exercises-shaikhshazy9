@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic information about our webpage -->
+    <meta charset="UTF-8"> <!-- Tells browsers to use UTF-8 character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page look good on mobile devices -->
+    <title>Homemade Lasagna Recipe</title> <!-- Shows up in browser tab -->
+    
+    <!-- CSS styling to make our recipe look nice -->
+    <!-- All the styling rules are inside these style tags -->
+    <style>
+        /* Main body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nice readable font */
+            line-height: 1.6; /* Space between lines of text */
+            margin: 0 auto; /* Centers content on page */
+            padding: 30px; /* Space around the content */
+            max-width: 800px; /* Stops page getting too wide */
+            background-color: #f9f5f0; /* Light cream background color */
+            color: #333; /* Dark gray text color */
+        }
+        
+        /* The main container for our recipe */
+        .recipe-container {
+            background-color: white; /* White background for recipe card */
+            padding: 30px; /* Space inside the recipe card */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+        }
+        
+        /* Main recipe title styling */
+        h1 {
+            color: #8b0000; /* Dark red color */
+            text-align: center; /* Centers the title */
+            font-size: 2.5em; /* Makes title large */
+            margin-bottom: 20px; /* Space below title */
+            border-bottom: 2px solid #8b0000; /* Red line under title */
+            padding-bottom: 10px; /* Space between title and line */
+        }
+        
+        /* Section headings styling */
+        h2 {
+            color: #8b0000; /* Dark red color */
+            margin-top: 30px; /* Space above each section title */
+            border-left: 5px solid #8b0000; /* Red line at left of section titles */
+            padding-left: 15px; /* Space between line and text */
+        }
+        
+        /* Regular paragraph text styling */
+        p {
+            font-size: 1.1em; /* Slightly larger than default text */
+            color: #555; /* Medium gray text color */
+            margin: 20px 0; /* Space above and below paragraphs */
+        }
+        
+        /* Special styling for the introduction paragraph */
+        .intro {
+            font-style: italic; /* Makes text slanted */
+            border-left: 3px solid #8b0000; /* Red line at left */
+            padding-left: 15px; /* Space between line and text */
+            background-color: #fff8f8; /* Very light pink background */
+        }
+        
+        /* Styling for lists (both ordered and unordered) */
+        ul, ol {
+            margin-left: 25px; /* Indents the lists */
+            margin-top: 15px; /* Space above lists */
+        }
+        
+        /* Styling for each list item */
+        li {
+            margin-bottom: 10px; /* Space between list items */
+            line-height: 1.5; /* Space between lines in list items */
+        }
+        
+        /* Special styling for the tips note at bottom */
+        .note {
+            background-color: #fffde7; /* Light yellow background */
+            padding: 15px; /* Space inside the note box */
+            border-radius: 5px; /* Rounded corners */
+            margin-top: 25px; /* Space above the note */
+            border-left: 4px solid #ffc107; /* Yellow line at left */
+        }
+        
+        /* General section container styling */
+        .section {
+            margin-bottom: 30px; /* Space below each section */
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container that holds all our recipe content -->
+    <div class="recipe-container">
+        <!-- Recipe title -->
+        <h1>Classic Homemade Lasagna</h1>
+        
+        <!-- Introduction section -->
+        <div class="section">
+            <p class="intro">This hearty homemade lasagna is the perfect comfort food for family gatherings or special occasions. Layers of rich meat sauce, creamy cheese mixture, and perfectly cooked pasta create an Italian masterpiece that's worth every minute spent in the kitchen.</p>
+        </div>
+        
+        <!-- Ingredients section -->
+        <div class="section">
+            <h2>Ingredients</h2>
+            <!-- Unordered list (bullet points) for ingredients -->
+            <ul>
+                <li>12 lasagna noodles</li>
+                <li>1 pound ground beef (preferably 80/20 lean-to-fat ratio)</li>
+                <li>1 pound Italian sausage, casings removed</li>
+                <li>1 large yellow onion, finely diced</li>
+                <li>5 garlic cloves, minced</li>
+                <li>2 cans (28 ounces each) crushed San Marzano tomatoes</li>
+                <li>2 cans (6 ounces each) tomato paste</li>
+                <li>2/3 cup water</li>
+                <li>1/4 cup red wine (optional)</li>
+                <li>3 tablespoons fresh basil, chopped</li>
+                <li>2 tablespoons fresh parsley, chopped</li>
+                <li>2 teaspoons dried oregano</li>
+                <li>2 bay leaves</li>
+                <li>2 teaspoons brown sugar</li>
+                <li>1 teaspoon Italian seasoning</li>
+                <li>1/2 teaspoon salt (or to taste)</li>
+                <li>1/4 teaspoon black pepper</li>
+                <li>1/4 teaspoon red pepper flakes (optional)</li>
+                <li>4 cups whole milk ricotta cheese</li>
+                <li>4 cups shredded mozzarella cheese</li>
+                <li>1 cup freshly grated Parmesan cheese</li>
+                <li>2 large eggs, lightly beaten</li>
+                <li>2 tablespoons olive oil</li>
+            </ul>
+        </div>
+        
+        <!-- Cooking method/instructions section -->
+        <div class="section">
+            <h2>Method</h2>
+            <!-- Ordered list (numbered steps) for cooking instructions -->
+            <ol>
+                <li>Preheat your oven to 375°F (190°C). Bring a large pot of salted water to a boil.</li>
+                <li>Cook lasagna noodles according to package directions until al dente (firm to bite). Drain and lay noodles flat on oiled baking sheets to prevent sticking.</li>
+                <li>In a large heavy-bottomed pot or Dutch oven, heat olive oil over medium heat. Add onions and cook until translucent, about 5 minutes.</li>
+                <li>Add garlic and cook for 30 seconds until fragrant. Add ground beef and Italian sausage, breaking it apart with a wooden spoon. Cook until no longer pink, about 8-10 minutes.</li>
+                <li>Drain excess fat if necessary. Add tomato paste and cook for 2 minutes, stirring constantly.</li>
+                <li>Pour in crushed tomatoes, water, and wine (if using). Add basil, parsley, oregano, bay leaves, brown sugar, Italian seasoning, salt, pepper, and red pepper flakes.</li>
+                <li>Bring to a simmer, then reduce heat to low. Cover partially and cook for 30-45 minutes, stirring occasionally, until sauce thickens.</li>
+                <li>While sauce simmers, prepare the cheese mixture. In a large bowl, combine ricotta cheese, 2 cups of mozzarella, 1/2 cup of Parmesan cheese, eggs, and a pinch of salt and pepper. Mix well.</li>
+                <li>Remove bay leaves from the sauce. Taste and adjust seasonings if needed.</li>
+                <li>To assemble: Spread 1 cup of meat sauce on the bottom of a deep 9×13-inch baking dish.</li>
+                <li>Arrange 3 noodles lengthwise over the sauce. Spread 1/3 of the ricotta mixture over the noodles, then 1/4 of the remaining meat sauce. Sprinkle with some mozzarella.</li>
+                <li>Repeat layers twice more: noodles, ricotta mixture, meat sauce, and some mozzarella.</li>
+                <li>Top with final layer of noodles, remaining meat sauce, remaining mozzarella, and all remaining Parmesan cheese.</li>
+                <li>Cover with aluminum foil (spray the underside with cooking spray to prevent sticking to cheese).</li>
+                <li>Bake covered for 25 minutes. Remove foil and bake for an additional 25 minutes until cheese is bubbly and golden brown.</li>
+                <li>Remove from oven and let stand for 15 minutes before serving to allow lasagna to set properly.</li>
+            </ol>
+        </div>
+        
+        <!-- Tips section at the bottom -->
+        <div class="note">
+            <p><strong>Chef's Tips:</strong> For best results, make the sauce a day ahead to allow flavors to develop. You can also assemble the entire lasagna up to 24 hours in advance and refrigerate before baking. If baking from refrigerated, add about 10-15 minutes to the covered baking time.</p>
+        </div>
+    </div>
+</body>
+</html>
