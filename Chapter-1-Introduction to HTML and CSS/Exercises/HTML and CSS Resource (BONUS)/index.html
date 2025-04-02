@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quick Reference Guide</title>
+    <!-- Link to external stylesheet as required by the exercise -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container for all content -->
+    <div class="container">
+        <!-- Main heading for the page (h1) -->
+        <h1>HTML & CSS Quick Reference Guide</h1>
+        
+        <!-- Introduction section -->
+        <div class="intro-section">
+            <p>This guide covers essential HTML tags and CSS properties that every web developer should know. Each section includes a description and example code.</p>
+        </div>
+        
+        <!-- HTML Tags Section -->
+        <section id="html-section">
+            <h2>HTML Tags</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages.</p>
+            
+            <!-- Tag 1: Headings -->
+            <div class="card">
+                <h3>Headings (h1-h6)</h3>
+                <p>Headings define the structure of your document. <code>&lt;h1&gt;</code> is the most important heading, while <code>&lt;h6&gt;</code> is the least important.</p>
+                <div class="code-example">
+                    <pre><code>&lt;h1&gt;This is a Main Heading&lt;/h1&gt;
+&lt;h2&gt;This is a Secondary Heading&lt;/h2&gt;
+&lt;h3&gt;This is a Tertiary Heading&lt;/h3&gt;
+&lt;h4&gt;This is a Fourth Level Heading&lt;/h4&gt;
+&lt;h5&gt;This is a Fifth Level Heading&lt;/h5&gt;
+&lt;h6&gt;This is a Sixth Level Heading&lt;/h6&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 2: Paragraphs -->
+            <div class="card">
+                <h3>Paragraphs (p)</h3>
+                <p>The paragraph tag creates a block of text separated from surrounding content by spaces.</p>
+                <div class="code-example">
+                    <pre><code>&lt;p&gt;This is a paragraph of text. Paragraphs are block-level elements that automatically add space before and after the content.&lt;/p&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 3: Links -->
+            <div class="card">
+                <h3>Links (a)</h3>
+                <p>The anchor tag creates hyperlinks to other web pages or to sections within the current page.</p>
+                <div class="code-example">
+                    <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;
+&lt;a href="#html-section"&gt;Jump to HTML Section&lt;/a&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 4: Lists -->
+            <div class="card">
+                <h3>Lists (ul, ol, li)</h3>
+                <p>HTML provides tags for creating ordered lists (numbered) and unordered lists (bulleted).</p>
+                <div class="code-example">
+                    <pre><code>&lt;!-- Unordered list --&gt;
+&lt;ul&gt;
+    &lt;li&gt;First bullet item&lt;/li&gt;
+    &lt;li&gt;Second bullet item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered list --&gt;
+&lt;ol&gt;
+    &lt;li&gt;First numbered item&lt;/li&gt;
+    &lt;li&gt;Second numbered item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 5: Images -->
+            <div class="card">
+                <h3>Images (img)</h3>
+                <p>The image tag embeds images into your webpage. The src attribute specifies the path to the image, and alt provides alternative text.</p>
+                <div class="code-example">
+                    <pre><code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 6: Divisions -->
+            <div class="card">
+                <h3>Divisions (div)</h3>
+                <p>The div tag defines a division or section in an HTML document and is used as a container for other HTML elements.</p>
+                <div class="code-example">
+                    <pre><code>&lt;div class="container"&gt;
+    &lt;h2&gt;This is inside a div&lt;/h2&gt;
+    &lt;p&gt;This paragraph is also inside the same div.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 7: Spans -->
+            <div class="card">
+                <h3>Spans (span)</h3>
+                <p>The span tag is an inline container used to mark up a part of a text or document.</p>
+                <div class="code-example">
+                    <pre><code>&lt;p&gt;Here is some text with a &lt;span style="color: red;"&gt;colored span&lt;/span&gt; in the middle.&lt;/p&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 8: Tables -->
+            <div class="card">
+                <h3>Tables (table, tr, th, td)</h3>
+                <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+                <div class="code-example">
+                    <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 9: Forms -->
+            <div class="card">
+                <h3>Forms (form, input, button)</h3>
+                <p>HTML forms are used to collect user input. Form elements include text fields, checkboxes, radio buttons, and more.</p>
+                <div class="code-example">
+                    <pre><code>&lt;form action="/submit-form" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 10: Code and Pre -->
+            <div class="card">
+                <h3>Code and Pre (code, pre)</h3>
+                <p>The code tag defines a piece of computer code. The pre tag preserves both spaces and line breaks, making it ideal for code examples.</p>
+                <div class="code-example">
+                    <pre><code>&lt;pre&gt;
+&lt;code&gt;
+function greet() {
+    console.log("Hello, world!");
+}
+&lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+                </div>
+            </div>
+            
+            <!-- Tag 11: Section -->
+            <div class="card">
+                <h3>Section (section)</h3>
+                <p>The section tag defines a section in a document, like chapters, headers, footers, or any other sections of the document.</p>
+                <div class="code-example">
+                    <pre><code>&lt;section&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;p&gt;This is content inside a section.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CSS Properties Section -->
+        <section id="css-section">
+            <h2>CSS Properties</h2>
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages.</p>
+            
+            <!-- Property 1: Color -->
+            <div class="card">
+                <h3>Color</h3>
+                <p>The color property sets the color of text.</p>
+                <div class="code-example">
+                    <pre><code>p {
+    color: blue;
+}
+
+h1 {
+    color: #FF5733; /* Hexadecimal */
+}
+
+span {
+    color: rgb(255, 0, 0); /* RGB */
+}</code></pre>
+                </div>
+            </div>
+            
+            <!-- Property 2: Background -->
+            <div class="card">
+                <h3>Background</h3>
+                <p>The background properties set the background color or image of an element.</p>
+                <div class="code-example">
+                    <pre><code>body {
+    background-color: #f0f0f0;
+}
+
+header {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}</code></pre>
+                </div>
+            </div>
+            
+            <!-- Property 3: Font -->
+            <div class="card">
+                <h3>Font Properties</h3>
+                <p>Font properties control the appearance of text, including the font family, size, weight, and style.</p>
+                <div class="code-example">
+                    <pre><code>p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}</code></pre>
+                </div>
+            </div>
+            
+            <!-- Property 4: Margin and Padding -->
+            <div class="card">
+                <h3>Margin and Padding</h3>
+                <p>Margin creates space outside an element, while padding creates space inside an element.</p>
+                <div class="code-example">
+                    <pre><code>div {
+    margin: 10px; /* Space outside the div */
+    padding: 20px; /* Space inside the div */
+}
+
+/* Individual sides */
+section {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}</code></pre>
+                </div>
+            </div>
+            
+            <!-- Property 5: Border -->
+            <div class="card">
+                <h3>Border</h3>
+                <p>The border property adds a border around an element.</p>
+                <div class="code-example">
+                    <pre><code>div {
+    border: 1px solid black;
+}
+
+/* Individual properties */
+button {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px; /* Rounded corners */
+}</code></pre>
+                </div>
+            </div>
+            
+            <!-- Property 6: Display -->
+            <div class="card">
+                <h3>Display</h3>
+                <p>The display property specifies how an element is displayed.</p>
+                <div class="code-example">
+                    <pre><code>div {
+    display: block; /* Default for div */
+}
+
+span {
+    display: inline; /* Default for span */
+}
+
+nav li {
+    display: inline-block; /* Combines properties of both */
+}
+
+.hidden {
+    display: none; /* Hides the element */
+}</code></pre>
+                </div>
+            </div>
+            
+            <!-- Property 7: Position -->
+            <div class="card">
+                <h3>Position</h3>
+                <p>The position property specifies the type of positioning method used for an element.</p>
+                <div class="code-example">
+                    <pre><code>div {
+    position: static; /* Default */
+}
+
+header {
+    position: fixed; /* Fixed to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.relative-parent {
+    position: relative; /* Establishes positioning context */
+}
+
+.absolute-child {
+    position: absolute; /* Positioned relative to nearest positioned ancestor */
+    top: 10px;
+    right: 10px;
+}</code></pre>
+                </div>
+            </div>
+            
+            <!-- Property 8: Text Properties -->
+            <div class="card">
+                <h3>Text Properties</h3>
+                <p>Text properties control the alignment, decoration, and spacing of text.</p>
+                <div class="code-example">
+                    <pre><code>p {
+    text-align: center; /* Alignment: left, right, center, justify */
+    text-decoration: underline; /* Decoration: underline, overline, line-through */
+    text-transform: uppercase; /* Capitalization: lowercase, uppercase, capitalize */
+    line-height: 1.5; /* Space between lines */
+    letter-spacing: 2px; /* Space between characters */
+}</code></pre>
+                </div>
+            </div>
+            
+            <!-- Property 9: Flexbox -->
+            <div class="card">
+                <h3>Flexbox</h3>
+                <p>Flexbox is a layout model that allows responsive elements within a container.</p>
+                <div class="code-example">
+                    <pre><code>.container {
+    display: flex; /* Enables flexbox */
+    flex-direction: row; /* Direction: row, column, row-reverse, column-reverse */
+    justify-content: space-between; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    flex-wrap: wrap; /* Allows items to wrap to next line */
+}
+
+.item {
+    flex: 1; /* Grow and shrink equally */
+}
+
+.important-item {
+    flex: 2; /* Takes twice as much space as other items */
+}</code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer section -->
+        <footer>
+            <h4>About This Guide</h4>
+            <p>This HTML and CSS quick reference was created as a learning exercise. It covers the basics of web development with examples for each tag and property.</p>
+            <p>Last updated: March 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
