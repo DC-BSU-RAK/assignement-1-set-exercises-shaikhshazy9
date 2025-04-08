@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photography Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f7e6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c5e1a;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .image-container {
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            background: white;
+            width: 300px;
+        }
+        
+        /* Adding some breathing room around the content */
+        .image-content {
+            padding: 15px;
+        }
+        
+        /* Make images responsive while respecting set dimensions */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Each image gets a different filter */
+        .sepia-filter {
+            filter: sepia(70%);
+            transition: filter 0.5s;
+        }
+        
+        .sepia-filter:hover {
+            filter: sepia(0%);
+        }
+        
+        .saturate-filter {
+            filter: saturate(150%);
+            transition: filter 0.5s;
+        }
+        
+        .saturate-filter:hover {
+            filter: saturate(100%);
+        }
+        
+        .contrast-filter {
+            filter: contrast(120%);
+            transition: filter 0.5s;
+        }
+        
+        .contrast-filter:hover {
+            filter: contrast(100%);
+        }
+        
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #2c5e1a;
+        }
+        
+        .copyright {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wonders of Nature</h1>
+    
+    <div class="gallery">
+        <!-- First image - Forest -->
+        <div class="image-container">
+            <img 
+                src="nikolay-glebov-O_IiwexfjEE-unsplash.jpg" 
+                alt="Dense green forest with sunlight filtering through trees" 
+                width="400" 
+                height="300" 
+                title="Enchanted Forest Path" 
+                class="sepia-filter">
+            <div class="image-content">
+                <h3>Forest Pathway</h3>
+                <p>A serene walking path through old-growth forest.</p>
+                <p class="copyright"> Image from Unsplash by Nikolay Glebov, licensed under Unsplash License (free to use commercially)</p>
+            </div>
+        </div>
+        
+        <!-- Second image - Mountain -->
+        <div class="image-container">
+            <img 
+                src="Joshua Earle png.png" 
+                alt="Majestic snow-capped mountain peak at sunset" 
+                width="300" 
+                height="400" 
+                title="Mountain Majesty" 
+                class="saturate-filter">
+            <div class="image-content">
+                <h3>Mountain Peak</h3>
+                <p>Stunning view of the mountain range at golden hour.</p>
+                <p class="copyright"> Image from Unsplash by Joshua Earle, licensed under Unsplash.</p>
+            </div>
+        </div>
+        
+        <!-- Third image - Waterfall -->
+        <div class="image-container">
+            <img 
+                src="jason-carnegie-7BiitleT45s-unsplash.jpg" 
+                alt="Cascading waterfall surrounded by lush vegetation" 
+                width="400" 
+                height="300" 
+                title="Cascading Waters" 
+                class="contrast-filter">
+            <div class="image-content">
+                <h3>Hidden Waterfall</h3>
+                <p>A peaceful waterfall tucked away in a remote valley.</p>
+                <p class="copyright">Image from Unsplash by Jason Carnegie, licensed under Unsplash License (free to use commercially)</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Simple script to make the page more interactive -->
+    <script>
+        // Add a little interactivity - display a message when an image is clicked
+        const images = document.querySelectorAll('img');
+        
+        images.forEach(img => {
+            img.addEventListener('click', function() {
+                alert('You clicked: ' + this.title);
+            });
+        });
+    </script>
+</body>
+</html>
