@@ -1,0 +1,122 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #17072b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area styles */
+main {
+    display: flex;
+    min-height: 70vh;
+}
+
+/* Welcome section styles */
+.welcome-section {
+    flex: 2;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.welcome-section p {
+    margin-bottom: 20px;
+}
+
+.code-image {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.code-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Lineup sidebar styles */
+.lineup-sidebar {
+    flex: 1;
+    background-color: #172d67;
+    color: white;
+    padding: 20px;
+}
+
+.lineup-sidebar ul {
+    list-style: none;
+    margin: 15px 0 30px 0;
+}
+
+.lineup-sidebar li {
+    margin-bottom: 15px;
+}
+
+.tech-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.tech-images img {
+    width: 48%;
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #8c15e9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
