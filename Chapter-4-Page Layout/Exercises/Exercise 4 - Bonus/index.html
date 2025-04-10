@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Study Plan Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header section with app title and user info -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-code"></i>
+            <h1>WebDev Study Plan</h1>
+        </div>
+        <div class="user-info">
+            <span>Welcome, Student</span>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+
+    <!-- Main navigation menu -->
+    <nav>
+        <ul>
+            <li class="active"><a href="#"><i class="fas fa-tasks"></i> Study Plan</a></li>
+            <li><a href="#"><i class="fas fa-book"></i> Resources</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Progress</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area divided into three columns -->
+    <main>
+        <!-- Left column: Topic categories -->
+        <section class="topics-column">
+            <h2>Topics</h2>
+            <ul class="topic-list">
+                <li class="active">HTML & CSS Basics</li>
+                <li>JavaScript Fundamentals</li>
+                <li>Responsive Design</li>
+                <li>Web APIs</li>
+                <li>Frontend Frameworks</li>
+                <li>Backend Development</li>
+                <li>Database Integration</li>
+                <li>Project Management</li>
+            </ul>
+            <button class="add-button"><i class="fas fa-plus"></i> Add Topic</button>
+        </section>
+
+        <!-- Middle column: Study items -->
+        <section class="items-column">
+            <div class="column-header">
+                <h2>HTML & CSS Basics</h2>
+                <div class="filter-sort">
+                    <select name="sort" id="sort">
+                        <option value="priority">Sort by Priority</option>
+                        <option value="date">Sort by Date</option>
+                        <option value="status">Sort by Status</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Study items list with 5 demo items -->
+            <div class="item-list">
+                <!-- Item 1 -->
+                <div class="study-item completed">
+                    <div class="item-header">
+                        <h3>HTML Document Structure</h3>
+                        <span class="priority high">High Priority</span>
+                    </div>
+                    <p>Learn about doctype, head, body, and semantic HTML elements.</p>
+                    <div class="item-footer">
+                        <span class="due-date"><i class="far fa-calendar"></i> Completed: Oct 12, 2024</span>
+                        <div class="item-actions">
+                            <button class="action-button"><i class="fas fa-edit"></i></button>
+                            <button class="action-button"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="study-item in-progress">
+                    <div class="item-header">
+                        <h3>CSS Box Model</h3>
+                        <span class="priority medium">Medium Priority</span>
+                    </div>
+                    <p>Understand margin, padding, border, and content dimensions.</p>
+                    <div class="item-footer">
+                        <span class="due-date"><i class="far fa-calendar"></i> Due: Oct 20, 2024</span>
+                        <div class="item-actions">
+                            <button class="action-button"><i class="fas fa-edit"></i></button>
+                            <button class="action-button"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="study-item">
+                    <div class="item-header">
+                        <h3>CSS Flexbox Layout</h3>
+                        <span class="priority high">High Priority</span>
+                    </div>
+                    <p>Master flexible box layout model for responsive design.</p>
+                    <div class="item-footer">
+                        <span class="due-date"><i class="far fa-calendar"></i> Due: Oct 25, 2024</span>
+                        <div class="item-actions">
+                            <button class="action-button"><i class="fas fa-edit"></i></button>
+                            <button class="action-button"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="study-item">
+                    <div class="item-header">
+                        <h3>CSS Grid Layout</h3>
+                        <span class="priority medium">Medium Priority</span>
+                    </div>
+                    <p>Learn two-dimensional grid-based layout system.</p>
+                    <div class="item-footer">
+                        <span class="due-date"><i class="far fa-calendar"></i> Due: Nov 2, 2024</span>
+                        <div class="item-actions">
+                            <button class="action-button"><i class="fas fa-edit"></i></button>
+                            <button class="action-button"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="study-item">
+                    <div class="item-header">
+                        <h3>CSS Animations</h3>
+                        <span class="priority low">Low Priority</span>
+                    </div>
+                    <p>Create transitions, transforms, and keyframe animations.</p>
+                    <div class="item-footer">
+                        <span class="due-date"><i class="far fa-calendar"></i> Due: Nov 10, 2024</span>
+                        <div class="item-actions">
+                            <button class="action-button"><i class="fas fa-edit"></i></button>
+                            <button class="action-button"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="add-button"><i class="fas fa-plus"></i> Add Study Item</button>
+        </section>
+
+        <!-- Right column: Details and resources -->
+        <section class="details-column">
+            <h2>Resources & Notes</h2>
+            
+            <div class="resource-section">
+                <h3>Recommended Resources</h3>
+                <ul class="resource-list">
+                    <li><a href="#"><i class="fas fa-link"></i> MDN Web Docs: HTML Basics</a></li>
+                    <li><a href="#"><i class="fas fa-video"></i> CSS Box Model Tutorial</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> Flexbox Froggy Game</a></li>
+                    <li><a href="#"><i class="fas fa-file-pdf"></i> CSS Grid Cheat Sheet</a></li>
+                </ul>
+            </div>
+
+            <div class="notes-section">
+                <h3>Your Notes</h3>
+                <div class="note">
+                    <p>Remember to practice using dev tools to inspect elements!</p>
+                    <span class="note-date">Oct 15, 2024</span>
+                </div>
+                <div class="note">
+                    <p>Check browser compatibility for new CSS features.</p>
+                    <span class="note-date">Oct 18, 2024</span>
+                </div>
+                <textarea placeholder="Add a new note..."></textarea>
+                <button class="save-button">Save Note</button>
+            </div>
+
+            <div class="progress-section">
+                <h3>Topic Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;">40%</div>
+                </div>
+                <p class="progress-info">2 of 5 items completed</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with links and copyright -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Creative Computing - Web Development Module</p>
+        </div>
+    </footer>
+</body>
+</html>
