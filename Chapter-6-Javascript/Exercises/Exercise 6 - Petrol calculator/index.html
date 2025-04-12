@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container for the calculator -->
+    <div class="calculator-container">
+        <h1>Petrol Calculator</h1>
+        
+        <!-- Form containing input fields -->
+        <form id="petrol-form">
+            <!-- Input field for cost per liter -->
+            <div class="input-group">
+                <label for="cost-per-liter">Cost per liter (£):</label>
+                <input 
+                    type="number" 
+                    id="cost-per-liter" 
+                    step="0.01" 
+                    min="0" 
+                    value="1.72" 
+                    required
+                >
+            </div>
+            
+            <!-- Input field for liters purchased -->
+            <div class="input-group">
+                <label for="liters-purchased">Liters purchased:</label>
+                <input 
+                    type="number" 
+                    id="liters-purchased" 
+                    step="0.01" 
+                    min="0" 
+                    value="0" 
+                    required
+                >
+            </div>
+            
+            <!-- Calculate button -->
+            <button type="button" id="calculate-btn">Calculate Total</button>
+        </form>
+        
+        <!-- Section for displaying results -->
+        <div class="result-section">
+            <div class="highlight">
+                <p id="total-cost">Total: £0.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
