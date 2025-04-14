@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Partridge Audio Sampler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Alan Partridge Soundboard</h1>
+        <div class="bank-title">Audio Sampler</div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <!-- Text to Speech Section -->
+            <section class="text-to-speech-section">
+                <textarea id="tts-input" placeholder="Type Here"></textarea>
+                <button id="tts-button">Say it</button>
+            </section>
+            
+            <!-- Soundboard Section -->
+            <section class="soundboard-section">
+                <div class="soundboard">
+                    <button class="sound-button" data-sound="ah-ha.mp3">
+                        <div class="number">10.</div>
+                        <div class="sound-name">Ah-Ha</div>
+                        <div class="sound-duration">1.4</div>
+                    </button>
+                    
+                    <button class="sound-button" data-sound="dan.mp3">
+                        <div class="number">11.</div>
+                        <div class="sound-name">Dan</div>
+                        <div class="sound-duration">0.5</div>
+                    </button>
+                    
+                    <button class="sound-button" data-sound="back-of-the-net.mp3">
+                        <div class="number">12.</div>
+                        <div class="sound-name">Back of the net</div>
+                        <div class="sound-duration">1.02</div>
+                    </button>
+                    
+                    <button class="sound-button" data-sound="bangoutoforder.mp3">
+                        <div class="number">13.</div>
+                        <div class="sound-name">Bang out of order</div>
+                        <div class="sound-duration">1.38</div>
+                    </button>
+                    
+                    <button class="sound-button" data-sound="imconfused.mp3">
+                        <div class="number">14.</div>
+                        <div class="sound-name">Jurassic Park</div>
+                        <div class="sound-duration">1.49</div>
+                    </button>
+                    
+                    <button class="sound-button" data-sound="iatescotchegg.mp3">
+                        <div class="number">15.</div>
+                        <div class="sound-name">Smell my cheese</div>
+                        <div class="sound-duration">1.91</div>
+                    </button>
+                    
+                    <button class="sound-button" data-sound="emailoftheevening.mp3">
+                        <div class="number">16.</div>
+                        <div class="sound-name">Goal</div>
+                        <div class="sound-duration">1.49</div>
+                    </button>
+                    
+                    <button class="sound-button" data-sound="hellopartridge.mp3">
+                        <div class="number">17.</div>
+                        <div class="sound-name">Kiss my face</div>
+                        <div class="sound-duration">1.07</div>
+                    </button>
+                    
+                    <button class="sound-button" data-sound="hellopartridge.mp3">
+                        <div class="number">18.</div>
+                        <div class="sound-name">Hello Partridge</div>
+                        <div class="sound-duration">2.25</div>
+                    </button>
+                </div>
+                
+                <div class="navigation">
+                    <button id="prev-button" class="nav-button">←</button>
+                    <button id="next-button" class="nav-button">→</button>
+                </div>
+            </section>
+        </div>
+        
+        <audio id="audio-player"></audio>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
