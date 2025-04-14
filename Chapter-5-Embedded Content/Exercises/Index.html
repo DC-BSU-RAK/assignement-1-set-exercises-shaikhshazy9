@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Embed Example</title>
+    <style>
+        /* CSS to center the video both horizontally and vertically */
+        body {
+            margin: 0;
+            padding: 0;
+            /* Set full height for the body to enable vertical centering */
+            height: 100vh;
+            /* Use flexbox for easy centering */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            background-color: #f0f0f0; /* Light background color */
+        }
+        
+        /* Style for the video container */
+        .video-container {
+            max-width: 800px; /* Maximum width of the video */
+            width: 90%;       /* Takes up to 90% of available width */
+        }
+        
+        /* Style for the video element */
+        video {
+            width: 100%;      /* Make video fill its container */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+        }
+    </style>
+</head>
+<body>
+    <!-- Video container div -->
+    <div class="video-container">
+        <!-- 
+        Video element with attributes:
+        - controls: displays video controls (play, pause, etc.)
+        - loop: makes the video replay when it finishes
+        - poster: displays an image before the video plays
+        - autoplay and muted: optional, remove if not needed
+        -->
+        <video controls loop poster="poster.jpg">
+            <source src="VIDEO.mp4" type="video/mp4">
+            
+            <!-- Fallback message for browsers that don't support the video element -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
