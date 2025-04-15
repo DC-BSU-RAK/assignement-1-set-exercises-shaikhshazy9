@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>RGB Color Guessing Game</h1>
+        <p>Can you guess which color matches the RGB value?</p>
+    </header>
+
+    <!-- Game container -->
+    <div class="game-container">
+        <!-- Game info -->
+        <div class="info-bar">
+            <div class="score-container">
+                <p>Score: <span id="score">0</span></p>
+                <p>High Score: <span id="high-score">0</span></p>
+            </div>
+            <div class="lives-container" id="lives-container">
+                <!-- Lives will be added by JS -->
+            </div>
+        </div>
+
+        <!-- RGB display -->
+        <div class="rgb-display" id="rgb-display">
+            RGB(255, 255, 255)
+        </div>
+
+        <!-- Color options -->
+        <div class="color-options" id="color-options">
+            <!-- Color squares will be added by JS -->
+        </div>
+
+        <!-- Feedback message -->
+        <div class="message" id="message"></div>
+
+        <!-- New colors button -->
+        <button id="new-colors">New Colors</button>
+    </div>
+
+    <!-- Game over popup -->
+    <div class="game-over" id="game-over">
+        <h2>Game Over!</h2>
+        <p>Your final score: <span id="final-score">0</span></p>
+        <button id="play-again">Play Again</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
